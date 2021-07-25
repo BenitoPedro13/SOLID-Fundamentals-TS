@@ -1,9 +1,11 @@
+import EventHandler from "./eventHandler"
 import AbstractLinkShareButton from "./abstractLinkShareButton"
+
 
 export default class ShareButtonFacebook extends AbstractLinkShareButton {
 
-    constructor(selector: string, url: string) {
-        super(selector, url)
+    constructor(eventHandler: EventHandler, selector: string, url: string) {
+        super(eventHandler, selector, url)
     }
 
     createLink(): string {

@@ -2,12 +2,12 @@ import EventHandler from "./eventHandler"
 
 export default abstract class AbstractShareButton {
 
-    eventHandler: DomEventHandler
+    eventHandler: EventHandler
     selector: string
 
     constructor(eventHandler: EventHandler, selector: string) {
         this.selector = selector
-        this.eventHandler = this.eventHandler
+        this.eventHandler = eventHandler
     }
 
     abstract createAction()
